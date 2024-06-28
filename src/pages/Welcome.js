@@ -8,14 +8,14 @@ import { containerStyle } from "../styles";
 const WelcomeImage = require("../../assets/img/Welcome.jpg");
 
 const Welcome = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   return (
     <>
       {isLoading === false ? (
         <ImageBackground
           imageStyle={{ opacity: 0.7 }}
           source={WelcomeImage}
-          style={[containerStyle.container, {}]}>
+          style={[containerStyle.container, {width: "100%",height: "100%"}]}>
           <Text
             style={{
               fontSize: 100,

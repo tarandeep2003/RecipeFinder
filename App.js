@@ -2,11 +2,13 @@ import { StyleSheet, Text, View } from "react-native";
 
 import Navigation from "./src/navigation/stackNavigation";
 import { StatusBar } from "expo-status-bar";
+import BottomTabNavigation from "./src/navigation/bottomNavigation/index";
 
 export default function App() {
   return (
     <>
-      <Navigation />
+        {/* <Navigation /> */}
+        <BottomTabNavigation />
     </>
   );
 }
